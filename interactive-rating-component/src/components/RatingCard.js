@@ -1,6 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+
+
+const ratings = [
+  {
+    value: 1,
+  },
+  {
+    value: 2,
+  },
+  {
+    value: 3,
+  },
+  {
+    value: 4,
+  },
+  {
+    value: 5,
+  },
+]
 
 function RatingCard() {
+  const [rating, setRating] = useState(0);
+  const handleClick = (e) =>{
+    setRating(Number(e.target.value))
+  }
   return (
     <div className='rating--container'>
       <div className='rounded--container'>
@@ -13,21 +37,13 @@ function RatingCard() {
         is appreciated to help us improve our offering!
       </p>
       <div className='rating--button--container'>
-        <div className='rounded--container'>
-          5
-        </div>
-        <div className='rounded--container'>
-          5
-        </div>
-        <div className='rounded--container'>
-          5
-        </div>
-        <div className='rounded--container'>
-          5
-        </div>
-        <div className='rounded--container'>
-          5
-        </div>
+        {ratings.map((rate, index) => {
+          return (
+            <button className={rating === rate.value ? 'rounded--container--choosen' :'rounded--container'} value={rate.value} key={index} onClick={handleClick}>
+              {rate.value}
+            </button>
+          )
+        })}
       </div>
       <button className='submit--button'>
         Submit

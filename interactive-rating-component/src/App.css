@@ -26,15 +26,35 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
   width: 48px;
+  cursor: pointer;
   height: 48px;
   border-radius: 100%;
+  border: none;
   background-color: #262E38;
 }
+.rounded--container:hover {
+  background-color: #7C8798;
+}
+.rounded--container--choosen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 48px;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  background-color: #FC7614;
+  color: #FFFFFF;
+}
 .rating--button--container {
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
   display: flex;
+  
 }
 .submit--button {
   width: 341px;
@@ -44,7 +64,14 @@ html {
   font-size: 15px;
   color: #FFFFFF;
   border-radius: 22px;
+  cursor: pointer;
   font-family: 'Overpass'
+}
+.submit--button:hover{
+  background-color: #FFFFFF;
+  color: #FC7614;
+
+
 }
 .card--header {
   font-style: bold;
