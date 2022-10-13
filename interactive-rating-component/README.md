@@ -11,8 +11,8 @@ Users should be able to:
 
 
 ### ScreenShoots
-![](./tip-calculator-app/public/screenshots/mobile.png)
-![](./tip-calculator-app/public/screenshots/desktop.png)
+![](./public/screenshots/desktop.png)
+![](./public/screenshots/mobile-screen.png)
 
 ### Links
 - Solution URL: [code](https://github.com/batonitamazi/interactive-rating-component)
